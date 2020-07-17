@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+	<title>Result </title>
+	<h1>Results</h1>
+</head>
+<body>
+	<div class="container">
+		{%for subject in subjects%}
+			<h1 class="card-title"><a href="/result/{{subject.id}}" class="btn btn-primary btn-lg">{{subject.subject_name}}</a></h1>
+		{% endfor %}
+	</div>
+	
+</body>
+</html>

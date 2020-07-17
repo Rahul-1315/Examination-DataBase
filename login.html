@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>Student-signIn</title>
+		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+		<style>
+			body{
+				background-image: url('mcq2.jpg');
+				background-size: 850px,50000px; 
+			}
+			.signin-titles {
+		font-family: 'Nunito', sans-serif;
+		font-size: 23px;
+		margin-bottom: 0px;
+		}
+		.signin-card{
+		background-color: #fcfcfc;
+		margin: 2%;
+		margin-top: 3%;
+		padding: 3% 5% 5% 5%;
+		border-radius: 5px;
+		box-shadow: 1px 1px 10px #eee;
+		}
+		</style>
+	</head>
+	<body>
+		<font face="Copperplate Gothic Bold" color=""><h1 color='grey'>EXAMINATION LOG-IN</h1></font>
+		<!-- Signin card with styling -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<div class="login-card">
+						<br>
+						<h2
+						style="text-align: center; font-family: 'Nunito', sans-serif;; font-size: 28px; font-weight: 600;">
+
+						</h2>
+						<form action="/login" method="POST">
+							<p class="login-titles" style="font-size: 16px; margin-top: 30px;">Username</p>
+							<input type="username" name="username" class="form-control" placeholder="Enter your username"
+							required>
+							<p class="login-titles" style="font-size: 16px; margin-top: 30px;">Password</p>
+							<input type="password" name="password" class="form-control" placeholder="Enter your password"
+							required>
+
+							<br>
+
+								
+							<button type="submit" class="btn btn-primary">Submit</button>
+
+							<p style="font-family: 'Nunito', sans-serif; margin-top: 10px; font-size: 14px; opacity: .8;">
+
+								
+								Don't have an account? <a href="/signup"><button type="button" class="btn btn-primary btn-sm">signup</button></a>
+							</p>
+						</form>
+						</div>
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+		</body>
+	</html>
